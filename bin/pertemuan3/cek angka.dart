@@ -16,6 +16,8 @@ void cekGanjilGenap(int angka) {
   }
 }
 
+
+
 void cekBilanganPrima(int angka) {
   if (angka < 2) {
     print("$angka BUKAN bilangan prima.");
@@ -45,6 +47,16 @@ void hitungFaktorial(int angka) {
   }
 
   print("Faktorial dari $angka adalah $hasil.");
+}
+
+void cekPositifNegatif(int angka) {
+  if (angka > 0) {
+    print("$angka adalah bilangan POSITIF.");
+  } else if (angka < 0) {
+    print("$angka adalah bilangan NEGATIF.");
+  } else {
+    print("$angka adalah NOL.");
+  }
 }
 
 

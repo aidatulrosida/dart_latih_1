@@ -16,24 +16,6 @@ void cekGanjilGenap(int angka) {
   }
 }
 
-void main() {
-  List<int> angkaList = [4, 7, 10];
-
-  for (var angka in angkaList) {
-    cekGanjilGenap(angka);
-    cekBilanganPrima(angka);
-    print('---');
-  }
-}
-
-void cekGanjilGenap(int angka) {
-  if (angka % 2 == 0) {
-    print("$angka adalah bilangan GENAP.");
-  } else {
-    print("$angka adalah bilangan GANJIL.");
-  }
-}
-
 void cekBilanganPrima(int angka) {
   if (angka < 2) {
     print("$angka BUKAN bilangan prima.");
@@ -54,3 +36,16 @@ void cekBilanganPrima(int angka) {
     print("$angka BUKAN bilangan PRIMA.");
   }
 }
+
+
+void hitungFaktorial(int angka) {
+  int hasil = 1;
+  for (int i = 1; i <= angka; i++) {
+    hasil *= i;
+  }
+
+  print("Faktorial dari $angka adalah $hasil.");
+}
+
+
+

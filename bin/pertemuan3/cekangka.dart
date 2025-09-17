@@ -1,9 +1,14 @@
 void main() {
   // Simulasi angka
+  // Daftar angka yang akan diuji
   List<int> angkaList = [4, 7, 10];
 
+   // Loop untuk setiap angka di dalam list
   for (var angka in angkaList) {
     cekGanjilGenap(angka);
+    cekBilanganPrima(angka);
+    hitungFaktorial(angka);
+    cekPositifNegatif(angka);
     print('---');
   }
 }
